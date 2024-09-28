@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/teamproject.css">
+    <script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
+    <style>
+      /* a태그 색상제거 */
+      a{color: inherit;}
+        /* div 사이즈 맞추기  */
+        div{box-sizing: border-box;}
+        /*배경부분*/
+        .wrap{ margin: 0 auto; text-align: center; padding-top: 150px;}
+        .head_wrap{width: 100% ;height: 50px;}
+        .footer_wrap{width: 100%;height: 150px; background-color: #595959;}
+        .width1200{width: 1200px; box-sizing: border-box; margin: 0 auto;}
+        .content1_wrap{background-color: #3F746B;}
+      
+        /*header수정부분 */
+        .fixid{position: fixed;top: 0;width: 100%; height: 150px;background-color: white; clear: both;}
+        .header{width: 1400px; height: 50px; margin: 0 auto; display: flex; justify-content: space-between;}
+        .header .header_navbar_left{margin-top: 10px; margin-left: 20px; font-size: 25px; line-height: 50%;}
+        .header .header_navbar_left a{color: #595959;}
+        .header .header_navbar_right ul{margin-top: 15px;font-weight: 500;}
+        .header .header_navbar_right li{display: inline-block; margin:0 15px;}
+        
+        /*topnav수정부분 */
+        .topnav{height: 100px;padding: 20px; font-size: 20px;}
+
+        .topnav_meun {
+          width: 1200px;
+          overflow: hidden;
+          margin: 0px auto;
+        }
+
+        .topnav_meun > li {
+          width: 20%; /*20*5=100%*/
+          float: left;
+          text-align: center;
+          line-height: 40px;
+        }
+
+        .topnav_meun a {
+          color: black;
+          font-weight: 600;
+        }
+
+        .submenu > li {
+          line-height: 50px;
+          background-color:#fff;
+        }
+
+        .submenu {
+          height: 0;
+          overflow: hidden;
+        }
+
+        .topnav_meun > li:hover {
+          background-color: pink;
+          transition-duration: 0.3s;
+        }
+
+        .topnav_meun > li:hover .submenu {
+          height: 250px ;
+          transition-duration: 1s;}
+
+        .topnav_meun > li:hover .sub_ht{height: 150px;}
+
+        /*main_content수정부분 */
+        .main_content{height: 600px;background: url(../img/main.jpg) no-repeat center;background-size: cover;}
+
+        /*content1수정부분 */
+        .content1{height: 200px;background-color: #3F746B;display: flex; }
+        .content1 h2{color: #FFFFFF;}
+        .content1_item1{background-color: #679913;}
+        .content1_item2{background-image: url(../img/subitem1.jpg);}
+        .content1_item3{background-image: url(../img/subitem2.jpg);}
+        .content1_item1 li{justify-content: space-between;}
+
+        .content1_item1 li,
+        .content1_item2 li{display: flex;margin-top: 10px;font-size: 20px;color: #FFFFFF;}
+
+        .content1_item3 h2{font-size: 20px;color: #FFFFFF;}
+        
+        .content1_item2 ,.content1_item3,.content1_item1{padding:20px; width: 400px; height: 200px;}
+
+        /*content2수정부분 */
+        .content2{height: 500 px;
+        padding: 10px;
+        display: grid; 
+        grid-template-columns: repeat (3,1fr);
+        grid-auto-rows: 150px;
+        grid-gap: 10px;
+        grid-template-areas:
+        'a a b b'
+        'a a c c'
+        'd d c c'
+        'e e e e'
+        'e e e e'
+        'e e e e'
+        ;}
+        .content2  .content2_item1{
+            grid-area: a;
+        }
+        .content2  .content2_item2{
+            grid-area: b;
+        }
+        .content2  .content2_item3{
+            grid-area: c;
+        }
+        .content2  .content2_item4{
+            grid-area: d;
+        }
+        .content2  .content2_item5{
+            grid-area: e;
+        }
+
+        .content2 img{width: 100%;height: 100%;object-fit: cover;}
+    
+        /*footer수정부분 */
+        .footer{height: 150px; background-color: #595959}
+        .footer .footer_left{ float: left;}
+
+        .footer .footer_left li{display: inline-block; margin-bottom: 40px; margin-right: 70px;}
+
+        .footer p,
+        .footer .footer_left a{color: #FFFFFF; font-size: 15px;}
+
+        .footer .footer_right{float: right;}
+
+        .footer .footer_right li{display: inline-block; margin-right: 20px; margin-top: 10px;}
+
+        .footer p{text-align: left; clear: both; display: block; }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="fixid">
+        <div class="head_wrap">
+             <div class="header width1200">
+                <div class="header_navbar_left"><a href="#"><img width="30px" height="30px" src="../img/mainLogo.png">유최박식물원<br><span style="font-size: 15px;">&nbsp;ucp botanical garden</span></a></div>
+
+
+                <div class="header_navbar_right">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">식물정보</a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass">검색</i></a></li>
+                    </ul>
+                </div>
+             </div><!--header 끝-->
+        </div><!--head_wrap 끝-->
+
+        <div class="topnav width1200">
+                  <ul class="topnav_meun width1200">
+                    <li><a href="#">식물원이야기</a>
+                        <ul class="submenu">
+                            <li><a href="#">식물원 소개</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">submenu03</a></li>
+                            <li><a href="#">식물원 안내사항</a></li>
+                            <li><a href="#">고객게시판</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="#">시설안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">submenu01</a></li>
+                            <li><a href="#">기프트샾</a></li>
+                            <li><a href="#">편의시설</a></li>
+                            <li><a href="#">submenu04</a></li>
+                            <li><a href="#">submenu05</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="#">식물정보</a>
+                        <ul class="submenu" >
+                            <li><a href="#">봄식물</a></li>
+                            <li><a href="#">여름식물</a></li>
+                            <li><a href="#">가을식물</a></li>
+                            <li><a href="#">겨울식물</a></li>
+                            <li><a href="#">다육식물</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="#">축제정보</a>
+                        <ul class="submenu sub_ht">
+                            <li><a href="#">코스모스축제</a></li>
+                            <li><a href="#">핑크뮬리축제</a></li>
+                            <li><a href="#">축제예정안내</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="#">방문안내</a>
+                        <ul class="submenu sub_ht">
+                            <li><a href="../html/roadmap.html">오시는길</a></li>
+                            <li><a href="../html/map.html">상세안내</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                          </ul>
+                    </li>
+                  </ul>
+        </div><!--topnav끝-->
+    </div><!--fixid 끝-->
+        <div class="main_content">
+        </div><!--main_content끝-->
+        <div class="content1_wrap">
+            <div class="content1 width1200">
+                <div class="content1_item1">
+                    <h2>이용요금 안내</h2>
+                    <ul>
+                        <li><span>· 성인</span><span>5.000원</span></li>
+                        <li><span>· 청소년</span><span>3.000원</span></li>
+                        <li><span>· 어린이</span><span>2.000원</span></li>
+                        <li><span>· 단체할인(20인이상)</span><span>30%</span></li>
+                        <li><span style="color:black;">&nbsp;&nbsp;※ 온누리 상품권 사용가능 합니다.</span></li>
+                    
+                    </ul>
+                </div>
+                <div class="content1_item2">
+                    <h2>관람안내</h2>
+                    <ul>
+                        <li><span>· 운영시간 : 09:30 ~ 18:00 까지</span></li>
+                        <li><span>· 매주 일요일 휴관  </span></li>
+                        <li><span>· 매표마감 : 17:00</li><br>
+                        <li><h3 style="color:#FFFFFF;">&nbsp;&nbsp;※ 공휴일 휴관합니다.<h3></li>   
+                    </ul>
+                </div>
+                <div class="content1_item3">
+                    <h2>운영안내</h2><br>
+                    <h2 style="color: rgb(181, 120, 237);">코스모스 축제</h2><br>
+                    <h2>9월30일 ~ 10월13일</h2><br>
+                    <h2 style="color: pink;">핑크뮬리 축제</h2><br>
+                    <h2>11월4일 ~ 11월17일</h2>
+                </div>
+            </div><!--content1끝-->
+        </div><!--content1_wrap 끝-->
+
+        <div class="content2 width1200">
+            <a class="content2_item1" href="#"><img class="content2_item1" src="../img/content1.jpg"></a>
+            <a class="content2_item2" href="#"><img class="content2_item2" src="../img/content2.jpg"></a>
+            <a class="content2_item3" href="#"><img class="content2_item3" src="../img/content3.png"></a>
+            <a class="content2_item4" href="#"><img class="content2_item4" src="../img/content4.webp"></a>
+            <a class="content2_item5" href="../html/map.html"><img class="content2_item5" src="../img/map.jfif"></a>
+        </div><!--content2끝-->
+
+        <div class="footer_wrap">
+            <footer class="footer width1200">
+                     <div class="footer_left">
+                        <ul>
+                         <li><a href="#">이용약관</a></li>
+                         <li><a href="#">개인정보처리방침</a></li>
+                         <li><a href="#">이메일수집거부</a></li>
+                         <li><a href="#">저작권정책</a></li>
+                         <li><a href="#"></a></li>
+                        </ul>
+                    </div> <!--footer_left 끝-->
+             <div class="footer_right"> 
+                <ul>
+                    <li><a target="_blank" href="https://youtu.be/HLbvI5oJfSQ?si=GTuIYlH89ef79oeN"><i class="fa-brands fa-youtube fa-3x"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/CLPArboretum/?locale=ko_KR"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/gardenbcj/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/"><i class="fa-brands fa-github fa-3x"></i></a></li>
+                </ul>
+            </div><!--footer_right 끝-->
+                <p>(77777) 하이미디어특별자치도 소연시 준수구 강훈광장로 10 &nbsp;&nbsp;&nbsp; 대표전화: 031-777-7777</p><br>
+                <p>Copyright © JEONJU CITY. ALL RIGHTS RESERVED.</p>
+            </footer><!--footer끝-->
+        </div>/<!--footer_wrap끝-->
+    </div><!--wrap끝-->
+    
+</body>
+</html>

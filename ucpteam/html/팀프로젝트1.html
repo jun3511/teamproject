@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/teamproject.css">
+    <script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
+    <style>
+        /*배경부분*/
+        div{box-sizing: border-box;}
+        .wrap{ margin: 0 auto;  text-align: center;                           }
+        .head_wrap{width: 100% ;height: 50px;}
+        .footer_wrap{width: 100%;height: 200px; background-color: #595959;}
+        .width1200{width: 1200px; box-sizing: border-box; margin: 0 auto;}
+        .content1_wrap{background-color: #3F746B;}
+
+        /*header수정부분 */
+        .header{height: 50px; margin: 0 auto; display: flex; justify-content: space-between;}
+        .header .header_navbar_left{margin-left: 20px; font-size: 30px;}
+        .header .header_navbar_right ul{margin-top: 15px;font-weight: 500;}
+        .header .header_navbar_right li{display: inline-block; margin:0 15px;}
+        
+        /*topnav수정부분 */
+        .topnav{height: 100px;line-height: 100px;}
+        .topnav li{display: inline-block;}
+        .topnav a{font-size: 20px;margin: 40px;font-weight: 600;}
+
+        /*main_content수정부분 */
+        .main_content{height: 800px;background: url(../images/garden.jpg) no-repeat center;background-size: cover;}
+
+        /*content1수정부분 */
+        .content1{height: 200px;background-color: #3F746B;display: flex; }
+        .content1 h2{color: #FFFFFF;}
+        .content1_item1{background-color: #679913;}
+        .content1_item2{background-image: url(../images/purple-5935577_item1.jpg);}
+        .content1_item3{background-image: url(../images/istockphot_item2.jpg);}
+        .content1_item1 li{justify-content: space-between;}
+
+        .content1_item1 li,
+        .content1_item2 li,
+        .content1_item3 li{display: flex;margin-top: 10px;font-size: 20px;color: #FFFFFF;}
+        
+        .content1_item2 ,.content1_item3,.content1_item1{padding:20px; width: 400px; height: 200px;}
+
+        /*content2수정부분 */
+        .content2{height: 600px; background-color: dodgerblue;}
+
+        /*content3수정부분 */
+        .content3{height: 600px; background-color: blue;}
+
+        /*content4수정부분 */
+        .content4{height: 600px; background-color: coral;}
+
+        /*footer수정부분 */
+        .footer{height: 200px; background-color: #595959}
+        .footer .footer_left{ float: left;}
+
+        .footer .footer_left li{display: inline-block; margin-bottom: 50px; margin-right: 70px;}
+
+        .footer p,
+        .footer .footer_left a{color: #FFFFFF; font-size: 20px;}
+
+        .footer .footer_right{float: right;}
+
+        .footer .footer_right li{display: inline-block; margin-right: 20px; margin-top: 20px;}
+
+        .footer p{text-align: left; clear: both; display: block; }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head_wrap">
+             <div class="header width1200">
+                <div class="header_navbar_left"><a href="#"><img width="50px" height="50px" src="../images/namu.png">유채박식물원</a></div>
+
+                <div class="header_navbar_right">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">식물정보</a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass">검색</i></a></li>
+                    </ul>
+                </div>
+             </div><!--header 끝-->
+        </div><!--head_wrap 끝-->
+
+        <div class="topnav width1200">
+                  <ul>
+                    <li><a href="#">식물원이야기</a></li>
+                    <li><a href="#">시설안내</a></li>
+                    <li><a href="#">식물정보</a></li>
+                    <li><a href="#">축제정보</a></li>
+                    <li><a href="#">예약정보</a></li>
+                    <li><a href="#">오시는길</a></li>
+                  </ul>
+        </div><!--topnav끝-->
+        <div class="main_content">
+            메뉴버튼 아래 구성될 옆으로 슬라이드되는 영상이나 그림같은거?
+        </div><!--main_content끝-->
+        <div class="content1_wrap">
+            <div class="content1 width1200">
+                <div class="content1_item1">
+                    <h2>이용요금 안내</h2>
+                    <ul>
+                        <li><span>· 성인</span><span>5.000원</span></li>
+                        <li><span>· 청소년</span><span>3.000원</span></li>
+                        <li><span>· 어린이</span><span>2.000원</span></li>
+                        <li><span>· 단체할인(20인이상)</span><span>30%</span></li>
+                    </ul>
+                </div>
+                <div class="content1_item2">
+                    <h2>관람안내</h2>
+                    <ul>
+                        <li><span>· 운영시간  09시 부터 18시까지</span></li>
+                        <li><span>· 매주 일요일 휴관  </span></li>
+                        <li><span>· </li>
+                    </ul>
+                </div>
+                <div class="content1_item3">
+                    <h2>운영안내</h2>
+                    <h2>10월1일 ~ 10월28일</h2>
+                    <h2>핑크뮬리 축제</h2>
+                    <h2>11월1일 ~ 11월20일</h2>
+                    <h2>할미꽃 축제</h2>
+                </div>
+            </div><!--content1끝-->
+        </div><!--content1_wrap 끝-->
+        <div class="footer_wrap">
+            <footer class="footer width1200">
+                     <div class="footer_left">
+                        <ul>
+                         <li><a href="#">이용약관</a></li>
+                         <li><a href="#">개인정보처리방침</a></li>
+                         <li><a href="#">이메일수집거부</a></li>
+                         <li><a href="#">저작권정책</a></li>
+                         <li><a href="#"></a></li>
+                        </ul>
+                    </div> <!--footer_left 끝-->
+             <div class="footer_right"> 
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-youtube fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github fa-3x"></i></a></li>
+                </ul>
+            </div><!--footer_right 끝-->
+                <p>(77777) 하이미디어특별자치도 소연시 준수구 강훈광장로 10 &nbsp;&nbsp;&nbsp; 대표전화: 031-777-7777</p><br>
+                <p>Copyright © JEONJU CITY. ALL RIGHTS RESERVED.</p>
+            </footer><!--footer끝-->
+        </div>/<!--footer_wrap끝-->
+    </div><!--wrap끝-->
+    
+</body>
+</html>
